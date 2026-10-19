@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Digital Seekho Hindi par computer, internet, PDF tools aur digital skills ke practical tutorials seekhein.">
+  <title>Digital Seekho Hindi | Tech Tips & Tutorials</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #243247;
+      background: #f5f8fc;
+      line-height: 1.7;
+    }
+    header {
+      background: #102a43;
+      color: white;
+      padding: 22px 6%;
+    }
+    header h1 { margin: 0; font-size: 27px; }
+    header p { margin: 5px 0 0; color: #cbd5e1; }
+    nav {
+      background: #fff;
+      padding: 13px 6%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    nav a {
+      color: #174ea6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: #dceeff;
+      padding: 42px 6%;
+    }
+    .hero h2 { font-size: 32px; margin: 0 0 10px; }
+    .hero p { max-width: 650px; }
+    .wrap { max-width: 1100px; margin: auto; padding: 28px 18px; }
+    .search {
+      width: 100%;
+      max-width: 500px;
+      padding: 13px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: white;
+      padding: 22px;
+      border-radius: 12px;
+      border: 1px solid #e5eaf0;
+    }
+    .card h3 { margin-top: 0; color: #174ea6; }
+    .card a { color: #174ea6; font-weight: bold; }
+    section { scroll-margin-top: 20px; }
+    .page-section {
+      background: white;
+      padding: 25px;
+      margin-top: 24px;
+      border-radius: 12px;
+    }
+    footer {
+      background: #102a43;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 30px;
+    }
+    footer a { color: #bfdbfe; margin: 0 8px; }
+    .muted { color: #64748b; }
+    @media (max-width: 600px) {
+      .hero h2 { font-size: 26px; }
+      nav { gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Digital Seekho Hindi</h1>
+  <p>Technology aur digital skills, simple Hinglish mein.</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#articles">Articles</a>
+  <a href="#about">About Us</a>
+  <a href="#contact">Contact</a>
+  <a href="#privacy">Privacy Policy</a>
+</nav>
+
+<section class="hero" id="home">
+  <h2>Technology seekhna ab aasan!</h2>
+  <p>Computer, internet, PDF tools aur useful digital skills
+     ke practical tutorials padhein aur apni skills badhayein.</p>
+  <a href="#articles">Saare tutorials dekhein ↓</a>
+</section>
+
+<main class="wrap">
+  <section id="articles">
+    <h2>Latest Tutorials</h2>
+    <p class="muted">Apni pasand ka tutorial search karein.</p>
+    <input class="search" id="search"
+      type="search" placeholder="Jaise PDF, computer, Gmail..."
+      aria-label="Tutorial search">
+
+    <div class="grid" id="article-grid" style="margin-top:22px">
+      <article class="card">
+        <h3>Computer Mein Screenshot Kaise Lein?</h3>
+        <p>Windows computer par screenshot lene ke
+           alag-alag tareeke aur useful shortcuts seekhein.</p>
+        <a href="#screenshot-guide">Guide padhein ↓</a>
+      </article>
+      <article class="card">
+        <h3>PDF File Kya Hai?</h3>
+        <p>PDF documents ko kholna, save karna aur
+           share karna simple steps mein samjhein.</p>
+        <a href="#pdf-guide">Guide padhein ↓</a>
+      </article>
+      <article class="card">
+        <h3>Google Drive Kaise Use Karein?</h3>
+        <p>Apni files online save karne aur documents
+           share karne ka basic tareeka seekhein.</p>
+        <a href="#drive-guide">Guide padhein ↓</a>
+      </article>
+    </div>
+    <p id="no-results" hidden>Koi matching tutorial nahi mila.</p>
+  </section>
+
+  <section class="page-section" id="screenshot-guide">
+    <h2>Computer Mein Screenshot Kaise Lein?</h2>
+    <p>Windows computer mein screenshot lene ke liye
+       Windows + Shift + S dabayein. Phir screen ka
+       woh hissa select karein jiska screenshot chahiye.
+       Screenshot ko supported app mein paste karke save
+       kar sakte hain.</p>
+    <p>Poore screen ko capture karne ke liye Print Screen
+       key bhi use ki ja sakti hai. Keyboard aur Windows
+       version ke hisaab se behaviour alag ho sakta hai.</p>
+  </section>
+
+  <section class="page-section" id="pdf-guide">
+    <h2>PDF File Kya Hai?</h2>
+    <p>PDF ek document format hai jo text aur layout ko
+       alag-alag devices par milta-julta rakhne mein madad
+       karta hai. PDF ko browser ya PDF reader mein khol
+       sakte hain.</p>
+    <p>Apne article ko aur useful banane ke liye apne
+       screenshots, tested steps aur common problems ke
+       solutions yahan add karein.</p>
+  </section>
+
+  <section class="page-section" id="drive-guide">
+    <h2>Google Drive Kaise Use Karein?</h2>
+    <p>Google Drive ek online file storage service hai.
+       Apne Google account se drive.google.com kholein.
+       New button se files ya folders upload kar sakte hain.</p>
+    <p>File share karne se pehle uski access settings
+       check karein aur sirf zaroori logon ko permission dein.</p>
+  </section>
+
+  <section class="page-section" id="about">
+    <h2>About Us</h2>
+    <p>Digital Seekho Hindi ek educational website hai
+       jiska maqsad readers ko computer, internet aur
+       digital tools ki practical jaankari simple Hinglish
+       mein dena hai.</p>
+    <p>Hum apne tutorials ko useful, clear aur beginners
+       ke liye samajhne layak banane ka prayas karte hain.</p>
+  </section>
+
+  <section class="page-section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Suggestions, corrections ya sawaal ke liye humein
+       email karein:</p>
+    <p><strong>Apna email yahan likhein:</strong>
+       your-email@example.com</p>
+    <p class="muted">Publish karne se pehle example email ko
+       apne asli contact email se replace karein.</p>
+  </section>
+
+  <section class="page-section" id="privacy">
+    <h2>Privacy Policy</h2>
+    <p>Digital Seekho Hindi par hum visitors ki privacy
+       ka samman karte hain. Website hosting provider ke
+       zariye technical logs collect ho sakte hain.</p>
+    <p>Bhavishya mein agar hum Google AdSense ya doosri
+       advertising services use karte hain, to ye services
+       cookies ya similar technologies ka istemal kar sakti
+       hain, applicable settings aur policies ke mutabik.</p>
+    <p>Visitors ko apni privacy choices aur applicable
+       regional rights ki jaankari honi chahiye. Website
+       par actual analytics, cookies, contact forms aur
+       advertising setup ke mutabik is policy ko update karein.</p>
+    <p>Privacy se jude sawaalon ke liye apne contact email
+       par message karein.</p>
+  </section>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Digital Seekho Hindi</p>
+  <p>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#privacy">Privacy Policy</a>
+  </p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+  const search = document.getElementById("search");
+  const cards = [...document.querySelectorAll("#article-grid .card")];
+  const noResults = document.getElementById("no-results");
+
+  search.addEventListener("input", () => {
+    const query = search.value.toLowerCase().trim();
+    let visible = 0;
+
+    cards.forEach(card => {
+      const match = card.innerText.toLowerCase().includes(query);
+      card.hidden = !match;
+      if (match) visible++;
+    });
+
+    noResults.hidden = visible !== 0;
+  });
+</script>
+
+</body>
+</html>
